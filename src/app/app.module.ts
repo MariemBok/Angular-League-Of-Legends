@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {AgGridModule} from "ag-grid-angular";
 import { ChampionComponent } from './champion/champion.component';
 
 @NgModule({
@@ -12,7 +13,8 @@ import { ChampionComponent } from './champion/champion.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgGridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
