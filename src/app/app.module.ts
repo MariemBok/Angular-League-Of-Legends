@@ -9,11 +9,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {ReactiveFormsModule} from "@angular/forms";
+import { GridComponent } from './grid/grid.component';
+import { DarkmodeToggleComponent } from './darkmode-toggle/darkmode-toggle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChampionComponent
+    ChampionComponent,
+    GridComponent,
+    DarkmodeToggleComponent
   ],
   imports: [
     BrowserModule,

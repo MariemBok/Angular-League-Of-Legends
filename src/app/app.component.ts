@@ -11,18 +11,18 @@ import {FormControl} from "@angular/forms";
 })
 export class AppComponent {
   isDark = new FormControl();
-  fa = faMoon;
+  fa = faSun;
 
   mode = "Light mode";
   isSlideChecked(){
     if (this.isDark.value){
-      this.fa= faSun;
-      this.mode = "Light mode";
+      this.fa= faMoon;
+      this.mode = "Dark mode";
 
     }
     else {
-      this.fa= faMoon;
-      this.mode = "Dark mode";
+      this.fa= faSun;
+      this.mode = "Light mode";
     }
 
 

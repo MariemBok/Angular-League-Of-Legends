@@ -3,7 +3,7 @@
 
   <mat-slide-toggle class="mt-5 mb-5 ml-5 mr-2"[formControl]="isDark" (change)="isSlideChecked()">{{mode}}</mat-slide-toggle>
 
-  <fa-icon  [icon]="fa" [ngStyle]="{'color':isDark.value ? '#FFA500' : ''}" ></fa-icon>
+  <fa-icon  [icon]="fa" [ngStyle]="{'color':isDark.value ? '' : '#FFA500'}" ></fa-icon>
 <ag-grid-angular
 style="width: 800px; height: 1000px; "
 [className]="isDark.value ? 'ag-theme-balham-dark m-10' : 'ag-theme-balham m-10'"
