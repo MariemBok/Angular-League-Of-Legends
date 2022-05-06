@@ -1,12 +1,15 @@
-<div class="bg-blue-500 dark:bg-gray-800 dark:text-white p-10 text-center text-lg">
-  <mat-slide-toggle [formControl]="isDark" (change)="isSlideChecked()">{{mode}}</mat-slide-toggle> &nbsp;
+<div  [className]="isDark.value ? 'dark' : ''">
+<div class="bg-slate-200 dark:bg-gray-800 dark:text-white">
+
+  <mat-slide-toggle class="m-5"[formControl]="isDark" (change)="isSlideChecked()">{{mode}}</mat-slide-toggle>
 
   <fa-icon [icon]="fa"></fa-icon>
 <ag-grid-angular
 style="width: 800px; height: 1000px; "
-class="ag-theme-alpine-dark"
+class="ag-theme-alpine-dark m-10"
 [rowData]="rowData"
 [columnDefs]="columnDefs" >
 
 </ag-grid-angular>
+  </div>
 </div>
