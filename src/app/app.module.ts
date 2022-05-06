@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {AgGridModule} from "ag-grid-angular";
 import { ChampionComponent } from './champion/champion.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ChampionComponent } from './champion/champion.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AgGridModule
+    AgGridModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
