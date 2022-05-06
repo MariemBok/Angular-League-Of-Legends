@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import {faSun} from "@fortawesome/free-solid-svg-icons";
-
+import {faSun, faMoon} from "@fortawesome/free-solid-svg-icons";
+import {FormControl} from "@angular/forms";
 
 
 @Component({
@@ -10,8 +10,23 @@ import {faSun} from "@fortawesome/free-solid-svg-icons";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  isDark = new FormControl();
+  fa = faSun;
+  mode = "Light mode";
+  isSlideChecked(){
+    if (this.isDark.value){
+      this.fa= faMoon;
+      this.mode = "Dark mode";
+    }
+    else {
+      this.fa= faSun;
+      this.mode = "Light mode";
+    }
+
+
+  }
   title = 'lol-champions';
-  faSun = faSun;
+
 
   columnDefs = [
     {headerName: "id", field: "id"},
