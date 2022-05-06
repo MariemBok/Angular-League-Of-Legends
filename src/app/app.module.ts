@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import {AgGridModule} from "ag-grid-angular";
 import { ChampionComponent } from './champion/champion.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     AgGridModule,
-    BrowserAnimationsModule
+    MatSlideToggleModule,
+    BrowserAnimationsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
