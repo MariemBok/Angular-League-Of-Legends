@@ -13,13 +13,15 @@ import { GridComponent } from './grid/grid.component';
 import { DarkmodeToggleComponent } from './darkmode-toggle/darkmode-toggle.component';
 import {HttpClientModule} from '@angular/common/http';
 import {Ng2SearchPipeModule} from 'ng2-search-filter';
+import { ChampionComponent } from './champion/champion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
 
     GridComponent,
-    DarkmodeToggleComponent
+    DarkmodeToggleComponent,
+    ChampionComponent
   ],
   imports: [
     BrowserModule,
