@@ -1,15 +1,8 @@
-<div  [className]="isDark.value ? 'dark' : ''">
+<div  [className]="darkmode ? 'dark' : ''">
 <div class="bg-slate-200 dark:bg-zinc-800 dark:text-white">
 
-  <mat-slide-toggle class="mt-5 mb-5 ml-5 mr-2"[formControl]="isDark" (change)="isSlideChecked()">{{mode}}</mat-slide-toggle>
+  <app-darkmode-toggle (darkevent)="darken($event)" ></app-darkmode-toggle>
 
-  <fa-icon  [icon]="fa" [ngStyle]="{'color':isDark.value ? '' : '#FFA500'}" ></fa-icon>
-<ag-grid-angular
-style="width: 800px; height: 1000px; "
-[className]="isDark.value ? 'ag-theme-balham-dark m-10' : 'ag-theme-balham m-10'"
-[rowData]="rowData"
-[columnDefs]="columnDefs" >
-
-</ag-grid-angular>
+  <app-grid [dark]="darkmode"></app-grid>
   </div>
 </div>

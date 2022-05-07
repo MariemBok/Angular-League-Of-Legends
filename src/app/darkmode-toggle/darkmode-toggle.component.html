@@ -1,1 +1,2 @@
-<p>darkmode-toggle works!</p>
+<mat-slide-toggle class="mt-5 mb-5 ml-5 mr-2"[formControl]="isDark" (change)="isSlideChecked()">{{mode}}</mat-slide-toggle>
+<fa-icon  [icon]="fa" [ngStyle]="{'color':isDark.value ? '' : '#FFA500'}" ></fa-icon>
